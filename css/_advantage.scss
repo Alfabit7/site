@@ -1,0 +1,36 @@
+.advantage {
+    background-color: #222;
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__card {
+        @include flexcolumn;
+        max-width: 360px;
+    }
+
+    &__icon {
+        padding-top: 104px;
+        padding-bottom: 28px;
+    }
+
+    &__title {
+        color: #FBFBFB;
+        font-size: 19.96px;
+        font-weight: 400;
+        padding-bottom: 16px;
+
+    }
+
+    &__text {
+        color: #FBFBFB;
+        text-align: center;
+        font-size: 13.972px;
+        font-weight: 300;
+        padding-bottom: 104px;
+
+    }
+}

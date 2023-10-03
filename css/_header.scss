@@ -1,0 +1,65 @@
+.header {
+    background-color: #222;
+
+    &__wrapper {
+        @include felxspbetween;
+        min-height: 74px;
+    }
+}
+
+.header__logo {
+    margin-left: 32px;
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.header__link_img_logo {
+    width: 44px;
+    height: 38px;
+}
+
+.header__link_img_search {
+    height: 26px;
+    width: 26px;
+
+}
+
+.header__menu {
+    margin-right: 32px;
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+
+.icon:hover {
+    fill: $baseColorSitePink;
+    stroke: $baseColorSitePink;
+}
+
+.icon__logo {
+    width: 44px;
+    height: 38px;
+}
+
+.search_icon {
+    width: 32px;
+    height: 23px;
+}
+
+
+.icon__burger {
+    width: 32px;
+    height: 23px;
+}
+
+.icon__profile {
+    width: 29px;
+    height: 29px;
+}
+
+.icon__cart {
+    width: 31.996px;
+    height: 29px;
+}

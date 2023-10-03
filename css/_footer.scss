@@ -1,0 +1,25 @@
+.footer {
+    background-color: #222;
+
+
+    &__wrapper {
+        @include felxspbetween;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    &__copyright__text {
+        color: #FBFBFB;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+
+    &__social {
+        display: flex;
+        gap: 10px;
+    }
+
+}
