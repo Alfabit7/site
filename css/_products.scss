@@ -1,5 +1,11 @@
 .products {
+    position: relative;
+
     margin-bottom: 48px;
+
+    &__mt {
+        margin-top: 800px;
+    }
 
     &__title {
         color: #222;

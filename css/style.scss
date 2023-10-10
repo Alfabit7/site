@@ -5,11 +5,17 @@
 @import 'advantage';
 @import 'request_form';
 @import 'footer';
+@import 'product';
+
 
 
 * {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 body {
