@@ -1,0 +1,142 @@
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.filters {
+    position: relative;
+    // padding-top: 39px;
+    min-height: 132px;
+    margin-right: 200px;
+    // display: flex;
+    gap: 30px;
+    // align-items: center;
+
+    &__title {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__details[open] {
+        background-color: #fff;
+        box-shadow: 6px 4px 35px rgb(0, 0, 0, 0.21);
+    }
+
+    &__details[open] .filters__title {
+        color: $baseColorSitePink;
+    }
+
+    &__details[open] path {
+        fill: $baseColorSitePink;
+    }
+
+
+    &__details {
+        box-sizing: border-box;
+        padding: 13px 16px 16px;
+        width: 360px;
+        position: absolute;
+        top: 39px;
+        z-index: 1;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__item {
+        margin-top: 16px;
+    }
+
+
+    .filters__link-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+
+    }
+
+    &__link {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:hover {
+            color: $baseColorSitePink;
+        }
+    }
+
+
+
+    &__head {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 11px 11px;
+        margin-left: 8px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $baseColorSitePink;
+
+    }
+
+    &__item[open] .filters__head {
+        color: $baseColorSitePink;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+
+.sort {
+    top: 40%;
+    left: 45%;
+    position: absolute;
+
+    display: flex;
+    gap: 28px;
+
+
+    &__summary {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+
+    &__details {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    &__check {
+        padding-bottom: 9px;
+    }
+
+    &__box {
+        width: 75%;
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -10px;
+        padding-top: 9px;
+
+    }
+
+}
