@@ -37,6 +37,8 @@
         }
 
     }
+
+
 }
 
 
@@ -47,6 +49,15 @@
 .product__card {
     max-width: 360px;
     background-color: #F8F8F8;
+
+    &__img {
+        margin-bottom: 16px;
+    }
+
+    &__img:hover {
+        opacity: 25%;
+    }
+
 
     &__subtitle {
         padding-bottom: 16px;
@@ -76,17 +87,16 @@
     }
 
 
+
 }
 
 
 
-.product__card img {
+.product__card__img img {
     width: 100%;
 }
 
-.product__card:hover {
-    opacity: 25%;
-}
+
 
 
 .products__card__img {

@@ -139,3 +139,55 @@ summary::-webkit-details-marker {
     }
 
 }
+
+.pagination {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+
+    &__wrapper {
+        border: 1px solid #EBEBEB;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    &__links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+    }
+
+    &__link {
+        color: #C4C4C4;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+
+    &__link:hover {
+        color: $baseColorSitePink;
+
+    }
+
+
+}
+
+.icon__arrow_left,
+.icon__arrow_right {
+    width: 8px;
+    height: 14px;
+}
