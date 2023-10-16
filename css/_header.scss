@@ -5,32 +5,45 @@
         @include felxspbetween;
         min-height: 74px;
     }
+
+    &__logo {
+
+        display: flex;
+        gap: 41px;
+        align-items: center;
+    }
+
+
+    &__link_img_logo {
+        width: 44px;
+        height: 38px;
+    }
+
+    &__link_img_search {
+        height: 26px;
+        width: 26px;
+
+    }
+
+    &__menu {
+        display: flex;
+        gap: 41px;
+        align-items: center;
+    }
 }
 
-.header__logo {
-    margin-left: 32px;
-    display: flex;
-    gap: 41px;
-    align-items: center;
-}
-
-.header__link_img_logo {
-    width: 44px;
-    height: 38px;
-}
-
-.header__link_img_search {
-    height: 26px;
-    width: 26px;
+.nav_left__link {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
 
 }
 
-.header__menu {
-    margin-right: 32px;
-    display: flex;
-    gap: 41px;
-    align-items: center;
-}
+
+
+
+
 
 
 .icon:hover {

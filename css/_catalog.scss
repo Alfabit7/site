@@ -8,12 +8,10 @@ summary::-webkit-details-marker {
 
 .filters {
     position: relative;
-    // padding-top: 39px;
     min-height: 132px;
     margin-right: 200px;
-    // display: flex;
     gap: 30px;
-    // align-items: center;
+
 
     &__title {
         color: #000;
@@ -24,6 +22,7 @@ summary::-webkit-details-marker {
     &__details[open] {
         background-color: #fff;
         box-shadow: 6px 4px 35px rgb(0, 0, 0, 0.21);
+        width: 360px;
     }
 
     &__details[open] .filters__title {
@@ -31,6 +30,7 @@ summary::-webkit-details-marker {
     }
 
     &__details[open] path {
+
         fill: $baseColorSitePink;
     }
 
@@ -38,7 +38,6 @@ summary::-webkit-details-marker {
     &__details {
         box-sizing: border-box;
         padding: 13px 16px 16px;
-        width: 360px;
         position: absolute;
         top: 39px;
         z-index: 1;

@@ -7,29 +7,30 @@
   align-items: center;
   min-height: 74px;
 }
-
 .header__logo {
-  margin-left: 32px;
   display: flex;
   gap: 41px;
   align-items: center;
 }
-
 .header__link_img_logo {
   width: 44px;
   height: 38px;
 }
-
 .header__link_img_search {
   height: 26px;
   width: 26px;
 }
-
 .header__menu {
-  margin-right: 32px;
   display: flex;
   gap: 41px;
   align-items: center;
+}
+
+.nav_left__link {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .icon:hover {
@@ -467,6 +468,7 @@ summary::-webkit-details-marker {
 .filters__details[open] {
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 360px;
 }
 .filters__details[open] .filters__title {
   color: #F16D7F;
@@ -477,7 +479,6 @@ summary::-webkit-details-marker {
 .filters__details {
   box-sizing: border-box;
   padding: 13px 16px 16px;
-  width: 360px;
   position: absolute;
   top: 39px;
   z-index: 1;
