@@ -1,0 +1,231 @@
+.cart {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+
+    &__composition {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__left {
+        display: flex;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        background-color: #fff;
+
+        &__form {
+            display: flex;
+            justify-content: space-between;
+
+            &__btn {
+                color: #000;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 17px 39px;
+                border: 1px solid #A4A4A4;
+                background-color: #fff;
+            }
+
+            &__btn:hover {
+                background-color: $baseColorSitePink;
+                color: #FFF;
+            }
+        }
+
+        &__img img {
+            max-width: 262px;
+            height: 100%;
+        }
+
+        &__content {
+            box-sizing: border-box;
+            width: 390px;
+            padding-left: 32px;
+            padding-top: 22px;
+            padding-bottom: 62px;
+
+            &-text {
+                padding-bottom: 6px;
+                color: #575757;
+                font-family: Lato;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            &-price::after {
+                content: $productPrice;
+            }
+
+            &-color::after {
+                content: $colorProduct;
+            }
+
+            &-size::after {
+                content: $sizeProduct;
+            }
+
+            &__heading {
+                display: flex;
+                align-items: baseline;
+                gap: 54px;
+                justify-content: space-between;
+
+                &-title {
+                    padding-bottom: 42px;
+                    color: #222;
+                    font-family: Lato;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+
+                &-svg {
+                    padding-right: 22px;
+                }
+            }
+
+            &__quantity {
+                display: flex;
+            }
+
+            &-input {
+                box-sizing: border-box;
+                padding-left: 10px;
+                margin-left: 24px;
+                width: 44px;
+                text-align: center;
+                border: 1px solid #EAEAEA;
+            }
+
+
+
+
+
+        }
+
+    }
+
+    &__checkout {
+        background-color: #F5F3F3;
+        padding: 42px;
+
+        &__line {
+            border-bottom: 1px solid #E2E2E2;
+            // padding-bottom: 17px;
+            margin-bottom: 17px;
+        }
+
+        &__sub {
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-weight: 400;
+            padding-bottom: 12px;
+            text-align: right;
+
+            &::after {
+                content: $productPrice;
+            }
+        }
+
+        &__total {
+            text-align: right;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 40px;
+
+            &::after {
+                content: $productPrice;
+                color: $baseColorSitePink;
+            }
+
+        }
+
+
+        &__form {
+            display: flex;
+            justify-content: center;
+
+            &__btn {
+                color: #FFF;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 300;
+                background-color: $baseColorSitePink;
+                padding: 15px 40px;
+                border: none;
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+
+    &__right {
+        max-width: 360px;
+
+        &__title {
+            padding-top: 16px;
+            padding-bottom: 20px;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+
+    &__shipping__form {
+        margin-bottom: 56px;
+    }
+
+    &__shipping__form select {
+        width: 360px;
+        height: 45px;
+    }
+
+    &__shipping__form__select {
+        padding-left: 16px;
+        margin-bottom: 20px;
+        color: #222;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 300;
+        border: 1px solid #A4A4A4;
+    }
+
+    &__shipping__form_btn {
+        padding: 10px 15px;
+        color: #4A4A4A;
+        font-size: 11px;
+        font-weight: 300;
+        font-family: Lato;
+        background-color: #fff;
+        border: 1px solid #A4A4A4;
+        max-width: 101px;
+
+    }
+
+    &__shipping__form_btn:hover {
+        background-color: $baseColorSitePink;
+        color: #FFF;
+    }
+}
+
+
+
+.cross_icon {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}

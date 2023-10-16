@@ -524,7 +524,7 @@ summary::-webkit-details-marker {
   left: 45%;
   position: absolute;
   display: flex;
-  gap: 28px;
+  gap: 8px;
 }
 .sort__summary {
   color: #6F6E6E;
@@ -554,9 +554,198 @@ summary::-webkit-details-marker {
   padding-top: 9px;
 }
 
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+}
+.cart__composition {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart__left {
+  display: flex;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  background-color: #fff;
+}
+.cart__left__form {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__left__form__btn {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 17px 39px;
+  border: 1px solid #A4A4A4;
+  background-color: #fff;
+}
+.cart__left__form__btn:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.cart__left__img img {
+  max-width: 262px;
+  height: 100%;
+}
+.cart__left__content {
+  box-sizing: border-box;
+  width: 390px;
+  padding-left: 32px;
+  padding-top: 22px;
+  padding-bottom: 62px;
+}
+.cart__left__content-text {
+  padding-bottom: 6px;
+  color: #575757;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+}
+.cart__left__content-price::after {
+  content: "300$";
+}
+.cart__left__content-color::after {
+  content: "Red";
+}
+.cart__left__content-size::after {
+  content: "XL";
+}
+.cart__left__content__heading {
+  display: flex;
+  align-items: baseline;
+  gap: 54px;
+  justify-content: space-between;
+}
+.cart__left__content__heading-title {
+  padding-bottom: 42px;
+  color: #222;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cart__left__content__heading-svg {
+  padding-right: 22px;
+}
+.cart__left__content__quantity {
+  display: flex;
+}
+.cart__left__content-input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  margin-left: 24px;
+  width: 44px;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+}
+.cart__checkout {
+  background-color: #F5F3F3;
+  padding: 42px;
+}
+.cart__checkout__line {
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 17px;
+}
+.cart__checkout__sub {
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  text-align: right;
+}
+.cart__checkout__sub::after {
+  content: "300$";
+}
+.cart__checkout__total {
+  text-align: right;
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+.cart__checkout__total::after {
+  content: "300$";
+  color: #F16D7F;
+}
+.cart__checkout__form {
+  display: flex;
+  justify-content: center;
+}
+.cart__checkout__form__btn {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #F16D7F;
+  padding: 15px 40px;
+  border: none;
+}
+.cart__right {
+  max-width: 360px;
+}
+.cart__right__title {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cart__shipping__form {
+  margin-bottom: 56px;
+}
+.cart__shipping__form select {
+  width: 360px;
+  height: 45px;
+}
+.cart__shipping__form__select {
+  padding-left: 16px;
+  margin-bottom: 20px;
+  color: #222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  border: 1px solid #A4A4A4;
+}
+.cart__shipping__form_btn {
+  padding: 10px 15px;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-weight: 300;
+  font-family: Lato;
+  background-color: #fff;
+  border: 1px solid #A4A4A4;
+  max-width: 101px;
+}
+.cart__shipping__form_btn:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+
+.cross_icon {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 li {
@@ -594,6 +783,11 @@ a {
 .advantage__icon {
   width: 44px;
   height: 31px;
+}
+
+.cross_icon {
+  width: 20px;
+  height: 20px;
 }
 
 .center {

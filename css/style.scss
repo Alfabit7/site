@@ -7,12 +7,23 @@
 @import 'footer';
 @import 'product';
 @import 'catalog';
+@import 'cart';
+
 
 
 
 * {
     margin: 0;
     padding: 0;
+}
+
+select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 li {
@@ -53,6 +64,14 @@ a {
     width: 44px;
     height: 31px;
 }
+
+
+.cross_icon {
+    width: 20px;
+    height: 20px;
+}
+
+
 
 .center {
     padding-left: calc(50% - 570px);
