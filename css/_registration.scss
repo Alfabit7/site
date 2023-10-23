@@ -3,10 +3,15 @@ fieldset {
 }
 
 .registration {
-    max-width: 360px;
+    max-width: 1140px;
     padding-top: 64px;
     padding-bottom: 96px;
     display: flex;
+
+    .center {
+        padding-left: calc(50% - 570px);
+        padding-right: calc(50% - 570px);
+    }
 
     &__form {
         margin-right: 128px;
@@ -116,9 +121,9 @@ fieldset {
         }
 
         &:checked {
-            border: 2px solid #A4A4A4;
-            background-color: $baseColorSitePink;
+            border: 10px solid blue;
             outline-color: grey;
+            outline: 100px solud red;
         }
 
     }
@@ -128,7 +133,8 @@ fieldset {
 
 
 .article__loyalty {
-    width: 652px;
+
+    width: 70vh;
 
     &__title {
         color: #000;
@@ -164,10 +170,52 @@ fieldset {
     }
 }
 
+.article__loyalty {
+    &__title {
+        font-size: 24px;
+    }
+
+
+    &__text {
+        font-size: 24px;
+
+        &-flag {
+            font-size: 24px;
+        }
+    }
+}
 
 // ICON
 .registration_arrow_right-icon {
     width: 17px;
     height: 17px;
     fill: white;
+}
+
+@media (max-width:1140px) {
+    .center {
+        margin: 0 auto;
+        max-width: 1140px;
+    }
+
+    .registration__form {
+        margin-right: 10px;
+    }
+
+
+    .article__loyalty {
+        width: 50vh;
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 16px;
+
+            &-flag {
+                font-size: 16px;
+            }
+        }
+    }
 }

@@ -191,3 +191,38 @@ summary::-webkit-details-marker {
     width: 8px;
     height: 14px;
 }
+
+@media (max-width:769px) {
+    .center {
+        padding-left: calc(50% - 768px);
+        padding-right: calc(50% - 768px);
+    }
+
+    .header {
+        &__logo {
+            padding-left: 32px;
+        }
+
+        &__menu {
+            padding-right: 32px;
+        }
+    }
+
+    .nav {
+        &__left {
+            padding-left: 16px;
+        }
+
+        &__right {
+            padding-right: 16px;
+        }
+    }
+
+    .filters {
+        margin-right: 0;
+    }
+
+    .sort {
+        left: 65%;
+    }
+}

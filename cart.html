@@ -102,43 +102,48 @@
 
 
         <div class="cart__right">
-            <h2 class="cart__right__title">SHIPPING ADRESS</h2>
+            <!-- <h2 class="cart__right__title">SHIPPING ADRESS</h2> -->
             <div class="cart__shipping"></div>
             <form action="#" class="cart__shipping__form">
-                <select class="cart__shipping__form__select" name="Country" id="country_id">
-                    <optgroup label="Country">
-                        <option class="cart__shipping__form__option" selected disabled hidden>Bangladesh</option>
-                        <option class="cart__shipping__form__option" value="Russia">Russia</option>
-                        <option value="China">China</option>
-                        <option value="Iran">Iran</option>
-                        <option value="Palestina">Palestina</option>
-                        <option value="Afrika">Afrika</option>
-                    </optgroup>
-                </select>
+                <fieldset>
+                    <legend class="cart__right__title">SHIPPING ADRESS</legend>
 
-                <select class="cart__shipping__form__select" name="State" id="state_id">
-                    <optgroup label="State">
-                        <option selected disabled hidden>State</option>
-                        <option value="Moscow">Moscow</option>
-                        <option value="Moscow">Pekin</option>
-                        <option value="Tegeran">Tegeran</option>
-                        <option value="Ramalla">Ramalla</option>
-                        <option value="Lome">Lome</option>
-                    </optgroup>
-                </select>
+                    <select class="cart__shipping__form__select" name="Country" id="country_id">
+                        <optgroup label="Country">
+                            <option class="cart__shipping__form__option" selected disabled hidden>Bangladesh</option>
+                            <option class="cart__shipping__form__option" value="Russia">Russia</option>
+                            <option value="China">China</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Palestina">Palestina</option>
+                            <option value="Afrika">Afrika</option>
+                        </optgroup>
+                    </select>
+
+                    <select class="cart__shipping__form__select" name="State" id="state_id">
+                        <optgroup label="State">
+                            <option selected disabled hidden>State</option>
+                            <option value="Moscow">Moscow</option>
+                            <option value="Moscow">Pekin</option>
+                            <option value="Tegeran">Tegeran</option>
+                            <option value="Ramalla">Ramalla</option>
+                            <option value="Lome">Lome</option>
+                        </optgroup>
+                    </select>
 
 
-                <select class="cart__shipping__form__select" name="Postcode_Zip" id="Postcode_Zip_id">
-                    <optgroup label="Postcode / Zip">
-                        <option selected disabled hidden>Postcode / Zip</option>
-                        <option value="190000">190000</option>
-                        <option value="190001">190001</option>
-                        <option value="190002">190002</option>
-                        <option value="190003">190003</option>
-                        <option value="190004">190004</option>
-                    </optgroup>
-                </select>
-                <input class="cart__shipping__form_btn" type="button" value="GET A QUOTE">
+                    <select class="cart__shipping__form__select" name="Postcode_Zip" id="Postcode_Zip_id">
+                        <optgroup label="Postcode / Zip">
+                            <option selected disabled hidden>Postcode / Zip</option>
+                            <option value="190000">190000</option>
+                            <option value="190001">190001</option>
+                            <option value="190002">190002</option>
+                            <option value="190003">190003</option>
+                            <option value="190004">190004</option>
+                        </optgroup>
+                    </select>
+                    <input class="cart__shipping__form_btn" type="button" value="GET A QUOTE">
+
+                </fieldset>
             </form>
             <div class="cart__checkout">
                 <p class="cart__checkout__sub">SUB TOTAL </p>
