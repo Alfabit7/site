@@ -230,6 +230,9 @@
     right: 22px;
 }
 
+
+
+
 @media(max-width:768px) {
 
     .cart {
@@ -247,6 +250,13 @@
             gap: 9px;
             justify-content: center;
         }
+
+        &__composition {
+            width: 100%;
+        }
+
     }
+
+
 
 }
