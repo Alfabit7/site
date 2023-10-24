@@ -248,4 +248,14 @@ fieldset {
     .form__wrapper {
         margin-bottom: 40px;
     }
+
+    .registration__form {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:420px) {
+    .registration__form__fieldset__input {
+        padding: 16px 180px 16px 16px;
+    }
 }

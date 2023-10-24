@@ -177,9 +177,7 @@
 
 
 
-.product__card_hidden {
-    display: none;
-}
+
 
 .products__cards {
     grid-template-columns: repeat(3, 360px);
@@ -220,6 +218,12 @@
         left: 20%;
     }
 
+    .product__card_hidden {
+        display: none;
+    }
+
+
+
 }
 
 
@@ -228,8 +232,6 @@
         width: 90%;
         left: 10%;
     }
-
-
 
 
 

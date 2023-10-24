@@ -446,10 +446,6 @@
   background-color: #fff;
 }
 
-.product__card_hidden {
-  display: none;
-}
-
 .products__cards {
   grid-template-columns: repeat(3, 360px);
   justify-content: center;
@@ -478,6 +474,9 @@
   .carousel-inner {
     width: 70%;
     left: 20%;
+  }
+  .product__card_hidden {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -1050,6 +1049,14 @@ fieldset {
   }
   .form__wrapper {
     margin-bottom: 40px;
+  }
+  .registration__form {
+    margin-right: 0;
+  }
+}
+@media (max-width: 420px) {
+  .registration__form__fieldset__input {
+    padding: 16px 180px 16px 16px;
   }
 }
 * {
