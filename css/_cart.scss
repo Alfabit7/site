@@ -229,3 +229,24 @@
     top: 20px;
     right: 22px;
 }
+
+@media(max-width:768px) {
+
+    .cart {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__right {
+            flex-direction: column;
+        }
+
+        &__left__form {
+            gap: 9px;
+            justify-content: center;
+        }
+    }
+
+}

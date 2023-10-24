@@ -10,7 +10,7 @@
 @import 'catalog';
 @import 'cart';
 @import 'registration';
-@import 'test';
+
 
 
 
@@ -76,10 +76,10 @@ a {
 
 
 
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
+// .center {
+//     padding-left: calc(50% - 570px);
+//     padding-right: calc(50% - 570px);
+// }
 
 
 .top {
@@ -303,6 +303,8 @@ a {
 
 /* Tablet version  */
 @media(max-width: 1112px) {
+
+
     .request_form {
         background-image: url("../image/bgc_form_tablet.png");
         background-size: cover;

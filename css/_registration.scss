@@ -134,7 +134,7 @@ fieldset {
 
 .article__loyalty {
 
-    width: 70vh;
+    // width: 70vh;
 
     &__title {
         color: #000;
@@ -192,10 +192,20 @@ fieldset {
     fill: white;
 }
 
+
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+
+
 @media (max-width:1140px) {
+
     .center {
-        margin: 0 auto;
-        max-width: 1140px;
+        padding-left: calc(50% - 570px);
+        padding-right: calc(50% - 570px);
     }
 
     .registration__form {
@@ -204,7 +214,6 @@ fieldset {
 
 
     .article__loyalty {
-        width: 50vh;
 
         &__title {
             font-size: 16px;
@@ -217,5 +226,26 @@ fieldset {
                 font-size: 16px;
             }
         }
+    }
+
+}
+
+@media (max-width:828px) {
+    .center {
+        padding-left: calc(50% - 414px);
+        padding-right: calc(50% - 414px);
+    }
+
+    .registration {
+        flex-direction: column;
+
+        &__form__fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .form__wrapper {
+        margin-bottom: 40px;
     }
 }

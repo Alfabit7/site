@@ -182,7 +182,7 @@
 }
 
 .products__cards {
-    grid-template-columns: repeat(2, 360px);
+    grid-template-columns: repeat(3, 360px);
     justify-content: center;
 }
 
@@ -193,12 +193,6 @@
 
 
 @media (max-width:1140px) {
-
-    .center {
-        margin: 0 auto;
-        max-width: 768px;
-
-    }
 
     .cart {
         flex-direction: column;
@@ -215,13 +209,28 @@
         margin-top: 0;
     }
 
-    .carousel-inner {
-        left: 12px;
-    }
 
     .product-page-wrapper {
         position: static;
         border: none;
     }
+
+    .carousel-inner {
+        width: 70%;
+        left: 20%;
+    }
+
+}
+
+
+@media(max-width:768px) {
+    .carousel-inner {
+        width: 90%;
+        left: 10%;
+    }
+
+
+
+
 
 }
