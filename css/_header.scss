@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     background-color: #222;
 
     &__wrapper {
@@ -29,8 +30,81 @@
         display: flex;
         gap: 41px;
         align-items: center;
+
+        &__title {
+            color: #000;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+        }
     }
 
+    &__nav {
+        width: 232px;
+        height: 639px;
+        background: #FFF;
+        padding: 32px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        //transition Почему-то не работает
+        transition: right .4;
+        z-index: 2;
+    }
+
+}
+
+
+
+#burger-menu-id {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked~.header__nav {
+        display: none;
+        right: -232px;
+    }
+}
+
+.filters__link-wrap {
+    flex-direction: column;
+    display: flex;
+}
+
+.filters__item_menu {
+    margin-top: 20px;
+}
+
+.filters__head_menu {
+    border: none;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 12px;
+
+
+}
+
+.filters__link_menu {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 11px;
+
+    &:hover {
+        color: $baseColorSitePink;
+    }
+}
+
+.cross_icon_menu {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 .nav_left__link {
